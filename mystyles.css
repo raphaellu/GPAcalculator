@@ -1,0 +1,20 @@
+.courseClicked {
+	background-color:#9adaff;
+}
+
+.hoverPointer:hover {
+	cursor:pointer;
+	background-color:#b4e3ff;
+}
+
+
+
+.majorGPA {
+	background-color:rgba(255, 255, 255, 0.7);
+	position:fixed;
+	top:45%;
+	left: 20px;
+	font-family: Monospace;
+	font-weight:bold;
+	font-size:30px;
+}

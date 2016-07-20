@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "major_gpa_calculator",
+  "description": "automatically calculates major gpa",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://act.ucsd.edu/studentAcademicHistory/academichistorystudentdisplay*"],
+      "css": ["mystyles.css"],
+      "js": ["jquery.js", "myscript.js"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab", 
+    "storage",
+    "tabs",
+    "https://act.ucsd.edu/studentAcademicHistory/academichistorystudentdisplay*",
+    "http://act.ucsd.edu/studentAcademicHistory/academichistorystudentdisplay*"
+  ]
+}
