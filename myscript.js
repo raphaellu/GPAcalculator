@@ -39,9 +39,13 @@ var enableSelection = function(data){
 var retrieveData = function(){
 
 	chrome.storage.sync.get('classes', function(result) {
+		// console.log(!result);
+		// console.log(result.length == 0);
+
+		if (!result || result.length == 0) return;
 		result = JSON.parse(result['classes'])
 		
-		if (result.length == 0) return;
+
 		var classes = [];
 		for (var i = 0 ; i < result.length; i ++) 
 			classes.push(result[i][Object.getOwnPropertyNames(result[i])[0]]);
