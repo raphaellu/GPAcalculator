@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "major_gpa_calculator",
-  "description": "automatically calculates major gpa",
+  "name": "UCSD GPA Calculator",
+  "description": "automatically calculates gpa for selected classes on UCSD Academic History page",
   "version": "1.0",
   "content_scripts": [
     {
